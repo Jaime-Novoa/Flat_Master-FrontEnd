@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+#test-form input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.btn-login {
+    display: inline-block;
+    background-color: #007bff; /* Cambia el color según tu diseño */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Color al pasar el cursor */
+    text-decoration: none; /* Asegura que no aparezca subrayado */
+}

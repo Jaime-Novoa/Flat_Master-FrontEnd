@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,6 @@ import { Component, Inject } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'webzoologico';
-  titlePage = '';
-
-  constructor(@Inject(DOCUMENT) private document: Document){
-
-  }
-  ngOnInit(): void {
-    //this.document.body.classList.add('bg-gradient-primary');
-  }
+  constructor(public authService: AuthService) {}
 }
+

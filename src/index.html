@@ -40,7 +40,7 @@
                     <div class="row align-items-center no-gutters">
                         <div class="col-xl-5 col-lg-6">
                             <div class="main-menu  d-none d-lg-block">
-                                <nav>
+                                <nav *ngIf="authService.isAuthenticated()">
                                     <ul id="navigation">
                                         <li><a id = "menuUsuarios" href="Usuarios.html" >Usuarios</a></li>
                                         <li><a id = "menuPagos" href="Pagos.html">Pagos</a></li>
@@ -95,7 +95,7 @@
                 <form action="#">
                     <div class="row">
                         <div class="col-xl-12">
-                            <input id="usuario" placeholder="Usuario">
+                            <input id="correo" placeholder="Correo">
                         </div>
                         <div class="col-xl-12">
                             <input id="contraseña" placeholder="Contraseña">

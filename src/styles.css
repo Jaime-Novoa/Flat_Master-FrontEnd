@@ -20,3 +20,13 @@
     background-color: #0056b3; /* Color al pasar el cursor */
     text-decoration: none; /* Asegura que no aparezca subrayado */
 }
+/* Estilo para los enlaces específicos */
+#menuUsuarios, #menuPagos, #menuApartamentos {
+    color: #007bff; /* Cambia al color que prefieras */
+    text-decoration: none; /* Opcional: elimina el subrayado */
+}
+
+/* Hover: efecto al pasar el ratón */
+#menuUsuarios:hover, #menuPagos:hover, #menuApartamentos:hover {
+    color: #0056b3; /* Cambia el color al pasar el ratón */
+}

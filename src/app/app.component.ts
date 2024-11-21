@@ -9,5 +9,10 @@ import { AuthService } from './services/auth.service';
 })
 export class AppComponent {
   constructor(public authService: AuthService) {}
+
+   onLogout(): void {
+    this.authService.logout(); // Elimina el token y cierra sesión
+    window.location.reload(); // Recarga la página para reflejar cambios
+   }
 }
 

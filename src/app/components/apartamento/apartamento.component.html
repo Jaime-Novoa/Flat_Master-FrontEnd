@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Lista de Apartamentos</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Propietario</th>
+        <th>Telefono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let apartamento of apartamentos">
+        <td>{{ apartamento.numero }}</td>
+        <td>{{ apartamento.propietario }}</td>
+        <td>{{ apartamento.telefono }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

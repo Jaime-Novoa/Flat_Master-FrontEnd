@@ -9,7 +9,7 @@ export class AuthService {
   private apiUrl = 'http://localhost:3000'; // La URL de tu backend
   private tokenKey = 'token'; // Llave para guardar el token en localStorage
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {
     const loginData = { email, password };
@@ -17,7 +17,7 @@ export class AuthService {
   }
 
   logout(): void {
-    localStorage.removeItem('isLoggedIn');
+    //localStorage.removeItem('isLoggedIn');
     localStorage.removeItem(this.tokenKey); // Elimina el token
   }
 

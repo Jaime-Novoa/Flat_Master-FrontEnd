@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Lista de Pagos</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Monto</th>
+        <th>Concepto</th>
+        <th>Apartamento</th>
+        <th>Estado</th>
+        <th>Fecha de Pago</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pago of pagos">
+        <td>{{ pago.monto }}</td>
+        <td>{{ pago.concepto }}</td>
+        <td>{{ pago.apartamento }}</td>
+        <td>{{ pago.estado }}</td>
+        <td>{{ pago.fecha }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm">Editar</button>
+          <button class="btn btn-danger btn-sm">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
